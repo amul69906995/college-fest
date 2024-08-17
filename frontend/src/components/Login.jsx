@@ -37,6 +37,7 @@ const Login = () => {
   }
   console.log(isLoading, "inside login")
   if (isLoading) return <h1>Loading...</h1>
+  if(!isLoading&&isAuth) navigate('/protected/profile');
   else {
     return (
       <div>

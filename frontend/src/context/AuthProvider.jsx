@@ -24,6 +24,7 @@ const AuthProvider = ({ children }) => {
             console.log(data)
             setUser(data.user)
             setIsAuth(true)
+            // navigate('/protected/profile')
         } catch (error) {
             console.log(error)
         } finally {
