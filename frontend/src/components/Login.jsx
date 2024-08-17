@@ -27,7 +27,7 @@ const Login = () => {
       setUser(data.user)
       localStorage.setItem('jwtToken',data.jwtToken)
       navigate('/protected/profile');
-      toast.success(data?.message, toastifyOption);
+     /*toast.success(data?.message, toastifyOption);*/
 
     } catch (e) {
       console.log(e)
