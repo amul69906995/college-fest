@@ -30,7 +30,7 @@ main()
 //NOTE::::: add withCredentials when u set cookies in response
 var cors = require('cors')
 app.use(cors({
-  origin:https://college-fest-kohl.vercel.app,
+  origin:process.env.FRONTEND_URL,
   credentials: true
 }))
 // morgan req logger
